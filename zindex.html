@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-index 프로퍼티</title>
+    <style>
+        div{
+            position: relative;
+        }
+        div>img{
+            position: absolute;
+            width: 100px;
+            height: 140px;
+        }
+        #spade-A{
+            left: 10px;
+            top: 20px;
+            z-index: 4;
+        }
+        #spade2{
+            left: 40px;
+            top: 30px;
+            z-index: 3;
+        }
+        #spade3{
+            left: 80px;
+            top: 40px;
+            z-index: 2;
+        }
+        #spade7{
+            left: 120px;
+            top: 50px;
+            z-index: -100;
+        }
+    </style>
+</head>
+<body>
+    <h3>z-index 프로퍼티</h3>
+    <hr>
+    <div>
+        <img src="spade-A.png" alt="스페이드A" id="spade-A">
+        <img src="spade-2.png" alt="스페이드2" id="spade2">
+        <img src="spade-3.png" alt="스페이드3" id="spade3">
+        <img src="spade-7.png" alt="스페이드7" id="spade7">
+    </div>
+</body>
+</html>
